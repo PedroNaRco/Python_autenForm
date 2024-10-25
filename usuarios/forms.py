@@ -36,11 +36,11 @@ class CadastroForms(forms.Form):
             }
         )
     )
-    username = forms.CharField(
-        label="Email",
+    email = forms.CharField(  # Renamed from username to email
+        label="Email",  # Update label
         required=True,
         max_length=100,
-        widget=forms.EmailInput(  # Use EmailInput para email
+        widget=forms.EmailInput(
             attrs={
                 "class": "form-control",
                 "placeholder": "Ex: pedro@gmail.com"
