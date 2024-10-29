@@ -22,7 +22,7 @@ def login(request):
                 return redirect('index')
             else:
                 messages.error(request, "Erro ao logar, crie uma conta!")
-                return redirect('cadastro')
+                return redirect('login')
   # exibir uma mensagem de erro
     return render(request, "usuarios/login.html", {"form": form})
 
